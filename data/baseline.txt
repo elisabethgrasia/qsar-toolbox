@@ -1,0 +1,3 @@
+Featurizer: Morgan fingerprint (ECFP4)
+Radius: 2
+n_bits: 2048

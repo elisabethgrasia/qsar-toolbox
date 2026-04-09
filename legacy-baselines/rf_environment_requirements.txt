@@ -1,0 +1,12 @@
+Requirements
+Key libraries used in this project:
+
+DeepChem
+
+scikit-learn
+
+PyTorch
+
+DGL
+
+RDKit
