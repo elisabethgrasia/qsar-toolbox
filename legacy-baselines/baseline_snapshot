@@ -1,0 +1,30 @@
+The baseline results from Tox21 data prediction (saved in other repository - toxicity-prediction)
+
+
+Random Forest model
+1. Current metrics
+  - validation ROC-AUC 0.7079
+  - mean across Tox21 tasks with validation dataset 0.7553
+2. Dataset settings
+  - Dataset : Tox21
+  - Source: DeepChem MolNet
+  - Split: set as default
+  - Seed: set as default
+  - Tasks: 12 toxicity endpoints
+3. Feature settings
+  - Features: DeepChem default featurization from load_tox21()
+  - User-defined featurizer: No
+4. Model settings
+  - Model: RandomForestClassifier
+  - n_estimators: 1000
+  - max_depth: None
+  - min_samples_leaf: 1
+  - class_weight: balanced
+  - n_jobs: -1
+  - random_state: 0
+  - max_features: sqrt
+5. Evaluation settings
+  - Metric: ROC-AUC
+  - Evaluation split: validation
+  - Prediction: predict_proba[:, 1]
+  - Missing labels: handled with mask
